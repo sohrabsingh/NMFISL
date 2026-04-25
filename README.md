@@ -109,6 +109,3 @@ jupyter notebook ISL_NonManual_Features_Detection.ipynb
 ---
 
 ## 👥 Team
-
-3rd Year B.Tech Students  
-Course Project — Computer Vision / Machine Learning
