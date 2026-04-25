@@ -1,0 +1,91 @@
+# Standard GitIgnore...
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ─── Virtual Environments ─────────────────────────────────────────────────────
+venv/
+env/
+.env/
+.venv/
+ENV/
+
+# ─── Jupyter Notebook ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.nbconvert.ipynb
+
+# ─── Dataset & Large Files ────────────────────────────────────────────────────
+# HuggingFace cache (can be re-downloaded)
+~/.cache/huggingface/
+.cache/
+*.parquet
+*.arrow
+*.feather
+
+# Raw image dumps
+data/
+datasets/
+raw/
+
+# ─── Trained Models ───────────────────────────────────────────────────────────
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+# Keep the CSVs (results + label map) — they're small and useful
+!models/results_summary.csv
+!models/label_mapping.csv
+
+# ─── Generated Plot Images ────────────────────────────────────────────────────
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+# Uncomment below if you DO want to commit plots to the repo:
+# !eda_class_distribution.png
+# !eda_sample_grid.png
+
+# ─── IDE & Editor ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ─── OS ───────────────────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ─── Logs & Temp ──────────────────────────────────────────────────────────────
+*.log
+*.tmp
+*.temp
+logs/
+output/
+tmp/
+
+# ─── Distribution / Packaging ─────────────────────────────────────────────────
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# ─── Testing ──────────────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
